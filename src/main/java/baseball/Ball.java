@@ -3,6 +3,9 @@ package baseball;
 import java.util.Objects;
 
 public class Ball {
+    private static final String BALL = "볼";
+    private static final String STRIKE = "스트라이크";
+    private static final String NOTHING = "낫싱";
     private int position;
     private int number;
 
@@ -13,13 +16,13 @@ public class Ball {
 
     public String score(Ball ball) {
         if (isBall(ball)) {
-            return "볼";
+            return BALL;
         }
 
         if (equals(ball)) {
-            return "스트라이크";
+            return STRIKE;
         }
-        return "낫싱";
+        return NOTHING;
     }
 
     public boolean isBall(Ball ball) {
