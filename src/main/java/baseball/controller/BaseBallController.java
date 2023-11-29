@@ -1,12 +1,12 @@
 package baseball.controller;
 
-import baseball.BaseBallScore;
-import baseball.ComputerNumbers;
-import baseball.NumberGenerator;
-import baseball.NumberValidator;
-import baseball.UserInput;
-import baseball.UserNumbers;
+import baseball.model.BaseBallScore;
+import baseball.model.ComputerNumbers;
+import baseball.model.NumberGenerator;
+import baseball.model.NumberValidator;
+import baseball.model.UserNumbers;
 import baseball.view.OutputView;
+import baseball.view.UserInput;
 import java.util.List;
 
 public class BaseBallController {
