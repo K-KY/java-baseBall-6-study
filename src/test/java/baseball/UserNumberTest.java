@@ -2,6 +2,9 @@ package baseball;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import baseball.model.BaseBallScore;
+import baseball.model.ComputerNumbers;
+import baseball.model.UserNumbers;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

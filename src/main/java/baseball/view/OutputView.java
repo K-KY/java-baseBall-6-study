@@ -1,6 +1,6 @@
 package baseball.view;
 
-import baseball.BaseBallScore;
+import baseball.model.BaseBallScore;
 import java.util.List;
 
 public class OutputView {

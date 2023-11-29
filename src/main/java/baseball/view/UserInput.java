@@ -1,5 +1,6 @@
-package baseball;
+package baseball.view;
 
+import baseball.model.NumberValidator;
 import camp.nextstep.edu.missionutils.Console;
 import java.util.ArrayList;
 import java.util.List;
