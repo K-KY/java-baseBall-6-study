@@ -16,4 +16,8 @@ public enum BaseBallScore {
     public static boolean isStrike(String score) {
         return score.equals(STRIKE.score);
     }
+
+    public static boolean isNothing(String score) {
+        return !isBall(score) && !isStrike(score);
+    }
 }
