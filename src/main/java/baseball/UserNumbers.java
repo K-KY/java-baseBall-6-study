@@ -17,8 +17,7 @@ public class UserNumbers implements BallSeparator {
         return balls;
     }
 
-    public void score(ComputerNumbers computerBalls) {
-        List<String> collect = userBalls.stream().map(computerBalls::score).toList();
-        System.out.println(collect);
+    public List<String> score(ComputerNumbers computerBalls) {
+        return userBalls.stream().map(computerBalls::score).toList();
     }
 }
