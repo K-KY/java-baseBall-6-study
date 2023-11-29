@@ -12,3 +12,5 @@
 - position과 number가 같으면 strike
 - position은 다르고 number만 같으면 ball
 - 둘 다 다르면 nothing
+
+### 결과 출력
