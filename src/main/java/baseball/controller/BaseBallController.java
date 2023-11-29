@@ -10,10 +10,13 @@ import baseball.view.OutputView;
 import java.util.List;
 
 public class BaseBallController {
+    private static final String START_GAME = "숫자 야구 게임을 시작합니다.";
+    private static final int END_POINT = 3;
+    private static final int RESTART = 1;
     private static List<Integer> generatedNumber = NumberGenerator.generateNumber();
 
     public void start() {
-        System.out.println("숫자 야구 게임을 시작합니다.");
+        System.out.println(START_GAME);
         System.out.println(generatedNumber);
         UserInput userInput = new UserInput();
         process(userInput);
@@ -44,11 +47,14 @@ public class BaseBallController {
     }
 
     private boolean isEnd(List<String> scores) {
-        return scores.stream().map(BaseBallScore::isStrike).filter(result -> result).count() == 3;
+        return scores.stream()
+                .map(BaseBallScore::isStrike)
+                .filter(result -> result)
+                .count() == END_POINT;
     }
 
     private void restart(int restart) {
-        if (restart == 1) {
+        if (restart == RESTART) {
             generatedNumber = NumberGenerator.generateNumber();
             start();
         }
