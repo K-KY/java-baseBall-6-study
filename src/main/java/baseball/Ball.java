@@ -11,6 +11,17 @@ public class Ball {
         this.number = number;
     }
 
+    public String score(Ball ball) {
+        if (isBall(ball)) {
+            return "볼";
+        }
+
+        if (equals(ball)) {
+            return "스트라이크";
+        }
+        return "낫싱";
+    }
+
     public boolean isBall(Ball ball) {
         return !equals(ball) && ball.number == this.number;
     }
